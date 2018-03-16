@@ -4,8 +4,8 @@ Edge Colorizer is a program that detects edges in an image and colors them in a 
 
 Results:
 
-![](results/0.jpg)
+<img src="results/0.jpg" width="400">
 
-![](results/5.jpg)
+<img src="results/5.jpg" width="400">
 
-![](results/4.jpg)
+<img src="results/4.jpg" width="400">
