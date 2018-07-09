@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{Authors14}
+Authors:
+\newblock The frobnicatable foo filter (2014) BMVC14 submission ID 324.
+  Supplied as additional material {\tt bmvc14.pdf}.
+
+\bibitem{Authors14b}
+Authors:
+\newblock Frobnication tutorial (2014) Supplied as additional material {\tt
+  tr.pdf}.
+
+\bibitem{Alpher02}
+Alpher, A.:
+\newblock Frobnication.
+\newblock Journal of Foo \textbf{12}(1) (2002)  234--778
+
+\bibitem{Alpher03}
+Alpher, A., , Fotheringham-Smythe, J.P.N.:
+\newblock Frobnication revisited.
+\newblock Journal of Foo \textbf{13}(1) (2003)  234--778
+
+\bibitem{Alpher04}
+Alpher, A., , Fotheringham-Smythe, J.P.N., Gamow, G.:
+\newblock Can a machine frobnicate?
+\newblock Journal of Foo \textbf{14}(1) (2004)  234--778
+
+\end{thebibliography}
