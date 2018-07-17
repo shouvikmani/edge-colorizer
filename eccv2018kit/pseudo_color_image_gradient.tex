@@ -52,15 +52,15 @@ Image gradients are important because they serve as components for various downs
 \label{fig:example}
 \end{figure}
 
-The goal of this paper is to make image gradients more appealing and informative by enhancing them with color. The human eye can discern thousands of shades of color, but only two-dozen shades of gray \cite{human_machine}. A better, more visible image gradient will reveal details that were not visible in the black-and-white gradient. Further, we hope that a colored image gradient will create an artistic representation of the original image that is aesthetically pleasing.
+The goal of this paper is to make image gradients more appealing and informative by enhancing them with color. The human eye can discern thousands of shades of color, but only two-dozen shades of gray \cite{human_machine}. So, a better, more visible image gradient will reveal details that were not visible in the grayscale gradient. Further, we hope that a colored image gradient will create an artistic representation of the original image that is aesthetically pleasing.
 
 \section{Methodology}
 
-The pipeline for coloring the edges of an image has two main parts: edge detection and edge coloring. We combine a series of convolutions and other linear algebra operations to blur the image, detect its edges, compute gradient magnitude and directions, and pseudo-color the image gradient magnitude.
+The proposed pipeline for coloring the edges of an image has two main parts: edge detection and edge coloring. We combine a series of convolutions and other linear algebra operations to blur the image, detect its edges, compute gradient magnitude and directions, and pseudo-color the gradient magnitude.
 
 \subsection{Edge detection}
 
-The standard approach for edge detection is to convolve an image with a derivative filter like the Sobel filter to differentiate the intensity of the image pixels with respect to the horizontal and vertical directions of the image. However, since differentiation is very sensitive to noise, it is useful to blur the image first. This can be achieved by convolving the original image $f$ with a blur filter to produce a blurred image $f_b$. Figure 3 shows this transformation.
+The standard approach for edge detection is to convolve an image with a derivative filter like the Sobel filter to differentiate the intensity of the image pixels with respect to the horizontal and vertical directions of the image. However, since differentiation is very sensitive to noise, it is useful to blur the image first [2]. This can be achieved by convolving the original image $f$ with a blur filter, such as the Gaussian filter, to produce a blurred image $f_b$. For the purposes of edge detection, we will first convert $f$ to a grayscale image. Figure 3 shows the blur transformation.
 
 \begin{align}
 f_b = f * \begin{bmatrix} 
@@ -70,7 +70,14 @@ f_b = f * \begin{bmatrix}
 \end{bmatrix}
 \end{align}
 
-Once the image has been blurred, we can convolve the blurred image with the horizonal and vertical Sobel filters $S_x$ and $S_y$ respectively, to form the image derivatives in the horizontal and vertical directions, $\frac{\partial f_b}{\partial x}$ and $\frac{\partial f_b}{\partial y}$ respectively.
+\begin{figure}
+\centering
+\includegraphics[height=5cm]{images/blur.png}
+\caption{Blurring denoises the image and makes it easier to detect edges. The original image (left) is converted to grayscale (middle) and then blurred (right) using a blur filter.}
+\label{fig:example}
+\end{figure}
+
+Once the image has been blurred, we can perform edge detection using Sobel filters [3]. We convolve the blurred image $f_b$ with the horizontal and vertical Sobel filters, $S_x$ and $S_y$ respectively, to approximate the image derivatives in the horizontal and vertical directions, $\frac{\partial f_b}{\partial x}$ and $\frac{\partial f_b}{\partial y}$ respectively. $\frac{\partial f_b}{\partial x}$ has a strong response for vertical edges, and $\frac{\partial f_b}{\partial y}$ has a strong response for horizontal edges.
 
 \begin{align}
 S_x = \begin{bmatrix} 
@@ -90,7 +97,7 @@ S_x = \begin{bmatrix}
 \frac{\partial f_b}{\partial y} &= f_b * S_y
 \end{align}
 
-$\frac{\partial f_b}{\partial x}$ and $\frac{\partial f_b}{\partial y}$ can be combined to form the image gradient $\nabla f$. The following equations show how to calculate the magnitude $G$ and the direction $\theta$ of the image gradient.
+$\frac{\partial f_b}{\partial x}$ and $\frac{\partial f_b}{\partial y}$ can be combined to form the image gradient $\nabla f$. The following equations show how to calculate the magnitude $G$ and the direction $\theta$ of the image gradient. The resulting image gradient magnitude represents the intensity of edges in the image and is shown in Figure 4.
 
 \begin{align}
 \nabla f_b &= \begin{bmatrix} \frac{\partial f_b}{\partial x}, \frac{\partial f_b}{\partial y} \end{bmatrix} \\
@@ -98,7 +105,14 @@ G &= \vert \vert \nabla f_b \vert \vert = \sqrt{\Big( \frac{\partial f_b}{\parti
 \theta &= tan^{-1} \Big(\frac{\partial f_b}{\partial x} / \frac{\partial f_b}{\partial y})
 \end{align}
 
-The resulting image gradient magnitude and direction are shown in Figure 4.
+\begin{figure}
+\centering
+\includegraphics[height=5cm]{images/edge.png}
+\caption{Edge detection using Sobel filters. We convolve the blurred image (left) with the Sobel filters and compute the magnitude (middle) and direction (right) of the gradient.}
+\label{fig:example}
+\end{figure}
+
+Although the gradient magnitude image describes the edges in the original image, it lacks artistic quality and novelty. Next, we consider how to color this gradient magnitude to turn it into a vibrant piece of art.
 
 \subsection{Edge coloring}
 
