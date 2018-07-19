@@ -5,29 +5,23 @@ Valentinuzzi, M.E.:
 \newblock Understanding the human machine: A primer for bioengineering.
 \newblock (2004)  265--266
 
-\bibitem{Authors14}
-Authors:
-\newblock The frobnicatable foo filter (2014) BMVC14 submission ID 324.
-  Supplied as additional material {\tt bmvc14.pdf}.
+\bibitem{filtering_lecture}
+Gkioulekas, I.:
+\newblock Image filtering (2018)
 
-\bibitem{Authors14b}
-Authors:
-\newblock Frobnication tutorial (2014) Supplied as additional material {\tt
-  tr.pdf}.
+\bibitem{sobel}
+Sobel, I.:
+\newblock An isotropic 3x3 image gradient operator.
+\newblock (1968)
 
-\bibitem{Alpher02}
-Alpher, A.:
-\newblock Frobnication.
-\newblock Journal of Foo \textbf{12}(1) (2002)  234--778
+\bibitem{pseudo_color}
+Radewan, C.H.:
+\newblock Digital image processing with pseudo-color.
+\newblock (1975)
 
-\bibitem{Alpher03}
-Alpher, A., , Fotheringham-Smythe, J.P.N.:
-\newblock Frobnication revisited.
-\newblock Journal of Foo \textbf{13}(1) (2003)  234--778
-
-\bibitem{Alpher04}
-Alpher, A., , Fotheringham-Smythe, J.P.N., Gamow, G.:
-\newblock Can a machine frobnicate?
-\newblock Journal of Foo \textbf{14}(1) (2004)  234--778
+\bibitem{color_map}
+Wang, R.:
+\newblock Color and pseudo-color images.
+\newblock (2016)
 
 \end{thebibliography}
