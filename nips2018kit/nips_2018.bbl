@@ -1,0 +1,32 @@
+\begin{thebibliography}{}
+
+\bibitem[Gkioulekas, 2018]{filtering_lecture}
+Gkioulekas, I. (2018).
+\newblock Image filtering.
+\newblock \url{http://www.cs.cmu.edu/~16385/lectures/lecture2.pdf}.
+
+\bibitem[Radewan, 1975]{pseudo_color}
+Radewan, C. (1975).
+\newblock Digital image processing with pseudo-color.
+\newblock {\em Acquisition and Analysis of Pictorial Data}.
+\newblock \url{https://doi.org/10.1117/12.954071}.
+
+\bibitem[Sobel, 1968]{sobel}
+Sobel, I. (1968).
+\newblock An isotropic 3x3 image gradient operator.
+
+\bibitem[Szeliski, 2010]{cv_book}
+Szeliski, R. (2010).
+\newblock {\em Computer Vision: Algorithms and Applications}.
+
+\bibitem[Valentinuzzi, 2004]{human_machine}
+Valentinuzzi, M. (2004).
+\newblock {\em Understanding the Human Machine: A Primer for Bioengineering}.
+
+\bibitem[Wang, 2016]{color_map}
+Wang, R. (2016).
+\newblock Color and pseudo-color images.
+\newblock
+  \url{http://fourier.eng.hmc.edu/e161/lectures/digital_image/node4.html}.
+
+\end{thebibliography}

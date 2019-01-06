@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{human_machine}
+Valentinuzzi, M.E.:
+\newblock Understanding the human machine: A primer for bioengineering.
+\newblock (2004)  265--266
+
+\bibitem{filtering_lecture}
+Gkioulekas, I.:
+\newblock Image filtering (2018)
+
+\bibitem{sobel}
+Sobel, I.:
+\newblock An isotropic 3x3 image gradient operator.
+\newblock (1968)
+
+\bibitem{pseudo_color}
+Radewan, C.H.:
+\newblock Digital image processing with pseudo-color.
+\newblock (1975)
+
+\bibitem{color_map}
+Wang, R.:
+\newblock Color and pseudo-color images.
+\newblock (2016)
+
+\end{thebibliography}
