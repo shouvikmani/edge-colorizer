@@ -1,0 +1,86 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Agustsson and Timofte}{2017}]{DIV2K}
+Eirikur Agustsson and Radu Timofte.
+\newblock Ntire 2017 challenge on single image super-resolution: Dataset and
+  study.
+\newblock In {\em CVPR}, July 2017.
+
+\bibitem[\protect\citeauthoryear{Celebi}{2011}]{Celebi}
+M.~Emre Celebi.
+\newblock Improving the performance of k-means for color quantization.
+\newblock {\em Image Vision Comput.}, 29(4):260--271, March 2011.
+
+\bibitem[\protect\citeauthoryear{Esfandarani and Milanfar}{2017}]{nima}
+Hossein~Talebi Esfandarani and Peyman Milanfar.
+\newblock {NIMA:} neural image assessment.
+\newblock {\em CoRR}, 2017.
+
+\bibitem[\protect\citeauthoryear{{Gatys} \bgroup \em et al.\egroup
+  }{2016}]{Gatys}
+L.~A. {Gatys}, A.~S. {Ecker}, and M.~{Bethge}.
+\newblock Image style transfer using convolutional neural networks.
+\newblock pages 2414--2423, June 2016.
+
+\bibitem[\protect\citeauthoryear{Gkioulekas}{2018}]{filtering_lecture}
+I.~Gkioulekas.
+\newblock Image filtering.
+\newblock 2018.
+\newblock \url{http://www.cs.cmu.edu/~16385/lectures/lecture2.pdf}.
+
+\bibitem[\protect\citeauthoryear{Huang \bgroup \em et al.\egroup
+  }{2005}]{Huang}
+Yi-Chin Huang, Yi-Shin Tung, Jun-Cheng Chen, Sung-Wen Wang, and Ja-Ling Wu.
+\newblock An adaptive edge detection based colorization algorithm and its
+  applications.
+\newblock pages 351--354, 2005.
+
+\bibitem[\protect\citeauthoryear{Hunter}{2007}]{Hunter}
+J.~D. Hunter.
+\newblock Matplotlib: A 2d graphics environment.
+\newblock {\em Computing In Science \& Engineering}, 9(3):90--95, 2007.
+
+\bibitem[\protect\citeauthoryear{Lennan \bgroup \em et al.\egroup
+  }{2018}]{idealods2018imagequalityassessment}
+Christopher Lennan, Hao Nguyen, and Dat Tran.
+\newblock Image quality assessment.
+\newblock \url{https://github.com/idealo/image-quality-assessment}, 2018.
+
+\bibitem[\protect\citeauthoryear{Orchard and Bouman}{1991}]{Orchard1991ColorQO}
+Michael~T. Orchard and Charles~A. Bouman.
+\newblock Color quantization of images.
+\newblock {\em IEEE Trans. Signal Processing}, 39:2677--2690, 1991.
+
+\bibitem[\protect\citeauthoryear{Radewan}{1975}]{pseudo_color}
+C.H. Radewan.
+\newblock Digital image processing with pseudo-color.
+\newblock {\em Acquisition and Analysis of Pictorial Data}, 1975.
+\newblock \url{https://doi.org/10.1117/12.954071}.
+
+\bibitem[\protect\citeauthoryear{Sobel}{1968}]{sobel}
+I.~Sobel.
+\newblock An isotropic 3x3 image gradient operator.
+\newblock 1968.
+
+\bibitem[\protect\citeauthoryear{Szeliski}{2010}]{cv_book}
+R.~Szeliski.
+\newblock {\em Computer Vision: Algorithms and Applications}.
+\newblock 2010.
+
+\bibitem[\protect\citeauthoryear{Tranberg}{2018}]{Tranberg}
+Bo~Tranberg.
+\newblock Determining dominant colors in images using clustering, 2018.
+
+\bibitem[\protect\citeauthoryear{Valentinuzzi}{2004}]{human_machine}
+M.E. Valentinuzzi.
+\newblock {\em Understanding the Human Machine: A Primer for Bioengineering}.
+\newblock 2004.
+
+\bibitem[\protect\citeauthoryear{Wang}{2016}]{color_map}
+R.~Wang.
+\newblock Color and pseudo-color images.
+\newblock 2016.
+\newblock
+  \url{http://fourier.eng.hmc.edu/e161/lectures/digital_image/node4.html}.
+
+\end{thebibliography}
